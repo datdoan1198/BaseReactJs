@@ -1,0 +1,254 @@
+@import "../../assets/scss/variables";
+.bannerWrapper {
+  width: 100%;
+  background-size: 100% 100%;
+  position: relative;
+  .inputWrapper {
+    position: absolute;
+    bottom: 18%;
+    left: 13.5%;
+    input {
+      width: 300px;
+      border-radius: 24px;
+      background: #ffffff !important;
+      margin-right: 15px;
+      margin-bottom: 6px;
+      color: #1c1c1c !important;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+    .btnBanner {
+      width: 165px;
+      height: 57px;
+      cursor: pointer;
+    }
+    .btnATC {
+      min-width: 150px;
+      background: radial-gradient(80.24% 124.68% at 21.77% 9.22%, #FFCA20 0%, #FD9F00 100%);
+      box-shadow: 0px 4px 0px #F37112;
+      border: none;
+      font-weight: bold;
+      &:hover, &:focus {
+        background: radial-gradient(80.24% 124.68% at 21.77% 9.22%, #FFCA20 0%, #FD9F00 100%);
+        box-shadow: 0px 4px 0px #F37112;
+        border: none;
+      }
+    }
+  }
+  .imgWrap {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.bannerWrapperUnAuth {
+  margin-bottom: 0;
+}
+
+.slideWrapper {
+  max-width: 65%;
+  margin: 0 auto 53px;
+
+  .imgBanner {
+    height: 180px;
+    margin-bottom: 3px;
+  }
+}
+
+.styleBalance {
+  margin-bottom: 80px;
+  .styleBalanceTitle {
+    margin-bottom: 45px;
+    .textTitle {
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .styleBox {
+    padding-right: 50px;
+  }
+}
+
+.staticWrap {
+  background: rgba(0, 0, 0, 1);
+  color: #FFFFFF;
+  padding: 50px 0;
+  .titleWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    p {
+      font-weight: 800;
+      font-size: 24px;
+    }
+  }
+  .mainWrap {
+    margin-top: 20px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        margin-bottom: 15px;
+      }
+      .number {
+        font-weight: bold;
+        font-size: 44px;
+        margin-bottom: 5px;
+      }
+      .text {
+        font-weight: normal;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.stylePlayHistory {
+  color: #FFFFFF;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  .stylePlayHistoryTitle {
+    margin-bottom: 40px;
+    .textTitle {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .descriptionTitle {
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+}
+
+.snct {
+  color: rgba(3, 229, 244, 1);
+}
+
+.toc {
+  color: rgba(255, 213, 36, 1);
+}
+
+@media only screen and (max-width: 1396px) {
+  .bannerWrapper {
+    background-size: cover;
+    .inputWrapper {
+      position: absolute;
+      bottom: 15%;
+      left: 13.5%;
+    }
+  }
+
+  .slideWrapper {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 969px) {
+  .bannerWrapper {
+    height: 250px;
+    .inputWrapper {
+      position: absolute;
+      bottom: 15%;
+      left: 13.5%;
+      .btnBanner {
+        width: 100px;
+        height: 35px;
+      }
+    }
+    .imgWrap {
+      height: 250px;
+    }
+  }
+
+  .slideWrapper {
+    max-width: 720px;
+
+    .imgBanner {
+      height: 160px;
+      margin-bottom: 3px;
+    }
+  }
+
+  .staticWrap {
+    .mainWrap {
+      .item {
+        .text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bannerWrapper {
+    .inputWrapper {
+      position: absolute;
+      bottom: 15%;
+      left: 13.5%;
+    }
+  }
+
+  .slideWrapper {
+    padding: 0 20px;
+
+    .imgBanner {
+      height: 160px;
+      margin-bottom: 3px;
+    }
+  }
+
+  .styleBalance {
+    .styleBalanceTitle {
+      padding: 0 20px;
+    }
+    .styleBox {
+      padding: 20px;
+    }
+  }
+  .stylePlayHistory {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .bannerWrapper {
+    height: 150px;
+    margin-bottom: 30px;
+    .inputWrapper {
+      position: absolute;
+      bottom: 15%;
+      left: 13.5%;
+      .btnBanner {
+        width: 70px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    .imgWrap {
+      height: 150px;
+    }
+  }
+
+  .slideWrapper {
+    padding: 0 20px;
+
+    .imgBanner {
+      height: 180px;
+      margin-bottom: 3px;
+    }
+  }
+}

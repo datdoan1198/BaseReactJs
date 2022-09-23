@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.loadingPageWrap {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $colorDark;
+  position: fixed;
+  z-index: 10;
+  margin-top: -10px;
+
+  .loadingBody {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.actionLoading {
+  background-color: #1c1f2659;;
+}

@@ -1,0 +1,23 @@
+.timeCountDownWrap {
+  display: flex;
+  justify-content: center;
+  .itemWrap {
+    position: relative;
+    span{
+      background: #FFFFFf;
+      color: black;
+      padding: 8px 10px;
+      margin-left: 3px;
+    }
+    .task {
+      position: absolute;
+      bottom: -25px;
+      left: 30%;
+      padding: 0;
+      margin-left: 0;
+      font-size: 11px;
+      color: #ffffff;
+      background: #ffffff00;
+    }
+  }
+}

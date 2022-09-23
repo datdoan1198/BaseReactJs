@@ -1,0 +1,140 @@
+.table-history-play {
+  .ant-table-thead {
+    tr {
+      th {
+        background-color: rgb(66,53,104);
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f063;
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr {
+      td {
+        background-color: rgb(42,29,85);
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f063;
+        .style-activity {
+          display: flex;
+          p {
+            margin: 0;
+            padding-left: 15px;
+            line-height: 40px;
+          }
+        }
+        .ant-empty-description {
+          color: #ffffff;
+        }
+      }
+    }
+    tr:hover {
+      .ant-empty-description {
+        color: #260254;
+      }
+    }
+  }
+
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background-color: rgb(66,53,104);
+  }
+}
+
+.slick-slider{
+  .slick-list {
+    .slick-track {
+      .slick-current {
+        padding-right: 10px;
+      }
+      .slick-current + .slick-active {
+        padding: 0 5px;
+
+        &+.slick-active {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1397px) {
+  .table-history-play {
+    .ant-table-tbody {
+      tr {
+        td {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1397px) {
+  .section-training {
+    .ant-col-xl-6 {
+      display: block;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-training {
+    .ant-col-lg-8 {
+      display: block;
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%;
+    }
+  }
+}
+
+@media only screen and (max-width: 969px) {
+  .slick-slider{
+    .slick-list {
+      .slick-track {
+        .slick-current {
+          padding-right: 5px;
+        }
+        .slick-current + .slick-active {
+          padding: 0 0 0 5px;
+
+          &+.slick-active {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ant-modal {
+    width: 391px;
+  }
+  .ant-modal-body > img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slick-slider{
+    .slick-list {
+      .slick-track {
+        .slick-current {
+          padding: 0;
+        }
+        .slick-current + .slick-active {
+          padding: 0;
+
+          &+.slick-active {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

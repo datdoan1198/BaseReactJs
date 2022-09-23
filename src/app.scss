@@ -1,0 +1,30 @@
+@import "./assets/scss/variables";
+
+.ant-modal-mask {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.ant-input-number {
+  color: $colorWhite !important;
+  background: $colorDark !important;
+  line-height: 3 !important;
+  border-radius: 10px;
+  width: 60px;
+
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+
+.ant-input {
+  color: $colorWhite !important;
+  background: $colorDark !important;
+  line-height: 3 !important;
+  border-radius: 10px;
+}
+
+.btnDisabled {
+  background: $colorLightGray !important;
+  color: $colorGray !important;
+  cursor: not-allowed !important;
+}
