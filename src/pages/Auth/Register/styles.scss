@@ -1,0 +1,32 @@
+@import "../../../assets/scss/variables";
+.sign-up-form {
+    .ant-input {
+        background: #fff!important;
+        color: #000!important;
+        border-radius: 7px;
+    }
+
+    .ant-input-password {
+        border-radius: 7px;
+
+        .ant-input {
+            border-radius: 0;
+        }
+    }
+
+    .ant-checkbox {
+        &:hover {
+            border: none;
+        }
+    }
+    .ant-checkbox-checked {
+        .ant-checkbox-inner {
+            background: $colorButtonMain;
+
+            border: 0;
+        }
+        &:after {
+            border: none;
+        }
+    }
+}

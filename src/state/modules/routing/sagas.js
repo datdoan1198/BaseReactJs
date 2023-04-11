@@ -13,7 +13,7 @@ import {
   selectPreviousRoute
 } from './index';
 
-import { BOOT_FINISHED, bootDidFinish } from '../app';
+// import { BOOT_FINISHED, bootDidFinish } from '../app';
 
 // setup sagas on application boot
 export function* watchRouteSagas() {
@@ -25,10 +25,10 @@ export function* watchRouteSagas() {
 
   yield takeLatest(Object.keys(routesMap), function*(currentRoute) {
 
-    const hasBooted = yield select(bootDidFinish);
-    if (!hasBooted) {
-      yield take(BOOT_FINISHED);
-    }
+    // const hasBooted = yield select(bootDidFinish);
+    // if (!hasBooted) {
+    //   yield take(BOOT_FINISHED);
+    // }
 
     const previousRoute = yield select(selectPreviousRoute);
 

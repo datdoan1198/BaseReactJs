@@ -1,0 +1,19 @@
+@import "./src/assets/scss/variables";
+
+.LoginLayoutWrap {
+    width: 100%;
+    background-color: #f8f8fb;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    /* Main */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+}

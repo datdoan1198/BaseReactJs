@@ -1,0 +1,144 @@
+@import "../../../assets/scss/variables";
+.signUpWrap {
+    width: 450px;
+    min-height: 400px;
+    border-radius: 5px;
+    //box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    opacity: 0;
+    transform: translateX(600px) scale(0);
+    background: #fff;
+    overflow: hidden;
+
+    .headerWrap {
+        background: linear-gradient(270deg,#32465a,rgba(111,54,54,.5803921569));
+        width: 100%;
+        min-height: 130px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 10px 20px 0;
+        .descriptionWrap {
+            width: 50%;
+            margin-bottom: 40px;
+            color: #fff;
+            p {
+                margin-bottom: 0;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .content {
+                font-weight: 500;
+            }
+        }
+        .imgWrap {
+            img {
+                width: 150px;
+            }
+        }
+        .logoWrap {
+            position: absolute;
+            bottom: -30px;
+            left: 20px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #eff2f7;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .mainWrap {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 16px;
+
+            .textSignUp {
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .wordOfSharing {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .inputWrap {
+            width: 100%;
+            margin-bottom: 10px;
+
+            .input {
+                margin-bottom: 5px;
+            }
+
+            .error {
+                color: $colorError;
+            }
+        }
+
+        .toolbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .textForgotPassword {
+                cursor: pointer;
+            }
+        }
+
+        .buttonWrap {
+            width: 100%;
+            margin-bottom: 20px;
+            button {
+                width: 100%;
+                border: none;
+                background: $colorButtonMain;
+                color: $colorWhite;
+                border-radius: 7px;
+            }
+        }
+        .textFooter {
+            margin-bottom: 10px;
+        }
+
+        .tipWrap {
+            p {
+                margin-bottom: 0;
+            }
+            .icon {
+                margin: 0 3px;
+                color: rgb(244, 106, 106);
+            }
+            .name {
+                color: rgb(244, 106, 106);
+            }
+        }
+    }
+}
+
+.signUpWrapActive {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+}

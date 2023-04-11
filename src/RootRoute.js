@@ -3,7 +3,7 @@ import universal from 'react-universal-component';
 import { connect } from 'react-redux';
 import { string, bool, objectOf, any } from 'prop-types';
 import { selectRoutesMap, selectRouteType } from './state/modules/routing';
-import { bootDidFinish } from './state/modules/app';
+// import { bootDidFinish } from './state/modules/app';
 import Loading from './components/Loading';
 
 const RootRoute = ({
@@ -47,6 +47,6 @@ export default connect(state => {
     pageComponent: currentRoute.component,
     // in addition to showing the loading screen as chunks load,
     // we render it until initial app bootup finishes
-    isLoading: !bootDidFinish(state)
+    // isLoading: !bootDidFinish(state)
   };
 })(RootRoute);
